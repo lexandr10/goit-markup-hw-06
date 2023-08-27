@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,6 +37,16 @@
             </li>
           </ul>
         </nav>
+        <button
+          type="button"
+          class="btn-menu-burger js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-icon-menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#icon-hamburger"></use>
+          </svg>
+        </button>
         <address class="main-contact">
           <ul class="list-contact list">
             <li class="item-contact">
@@ -146,6 +157,7 @@
             <li class="item-block-doing">
               <img
                 class="img-block-doing"
+                srcset="./images/Monitor@2x.jpg 2x"
                 src="./images/Monitor.jpg"
                 alt="Monitor"
                 width="360"
@@ -155,6 +167,7 @@
             <li class="item-block-doing">
               <img
                 class="img-block-doing"
+                srcset="./images/Mockup@2x.jpg 2x"
                 src="./images/Mockup.jpg"
                 alt="Mockups"
                 width="360"
@@ -164,6 +177,7 @@
             <li class="item-block-doing">
               <img
                 class="img-block-doing"
+                srcset="./images/Phone@2x.jpg 2x"
                 src="./images/Phone.jpg"
                 alt="Phone and landtop"
                 width="360"
@@ -181,6 +195,7 @@
             <li class="item-ourteam">
               <img
                 class="image-ourteam"
+                srcset="./images/Mark@2x.jpg 2x"
                 src="./images/Mark.jpg"
                 alt="Man"
                 width="264"
@@ -244,6 +259,7 @@
             <li class="item-ourteam">
               <img
                 class="image-ourteam"
+                srcset="./images/Tom@2x.jpg 2x"
                 src="./images/Tom.jpg"
                 alt="Man"
                 width="264"
@@ -307,6 +323,7 @@
             <li class="item-ourteam">
               <img
                 class="image-ourteam"
+                srcset="./images/Camila@2x.jpg 2x"
                 src="./images/Camila.jpg"
                 alt="Girl"
                 width="264"
@@ -370,6 +387,7 @@
             <li class="item-ourteam">
               <img
                 class="image-ourteam"
+                srcset="./images/Daniel@2x.jpg 2x"
                 src="./images/Daniel.jpg"
                 alt="Man"
                 width="264"
@@ -700,6 +718,81 @@
       </div>
     </div>
     <!-- MODAL PAGE -->
+    <div class="mobile-menu-burger js-menu-container">
+      <button
+        type="button"
+        data-modal-close
+        class="close-btn-mobile js-close-menu"
+      >
+        <svg class="icon-close-mobile" height="8" width="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="nav-menu-burger">
+        <ul class="list-mobile-menu-burger list">
+          <li class="item-mobile-menu-burger">
+            <a class="link-mobile-menu-burger link" href="">Studio</a>
+          </li>
+          <li class="item-mobile-menu-burger">
+            <a class="link-mobile-menu-burger link" href="">Portfolio</a>
+          </li>
+          <li class="item-mobile-menu-burger">
+            <a class="link-mobile-menu-burger link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="contact-block-menu-burger">
+        <ul class="contact-mobile-menu-burger list">
+          <li class="item-contact-mobile-burger">
+            <a class="tel-menu-burger link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="item-contact-mobile-burger">
+            <a class="email-menu-burger link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="social-list-mobile-burger list">
+        <li class="social-item-mobile-burger">
+          <a class="social-link-mobile-burger" href="">
+            <svg class="social-icon-mobile-burger" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item-mobile-burger">
+          <a class="social-link-mobile-burger" href="">
+            <svg class="social-icon-mobile-burger" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item-mobile-burger">
+          <a class="social-link-mobile-burger" href="">
+            <svg class="social-icon-mobile-burger" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item-mobile-burger">
+          <a class="social-link-mobile-burger" href="">
+            <svg class="social-icon-mobile-burger" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
